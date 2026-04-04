@@ -12,6 +12,37 @@
 ---
 
 ## 🏗️ Architecture
+```mermaid
+graph TB
+    subgraph Endpoints["🖥️ Monitored Endpoints"]
+        WS[Windows Server\nWazuh Agent]
+        DC[Docker Containers\nDocker Listener]
+    end
+
+    subgraph Wazuh["🛡️ Wazuh Server - Ubuntu 24.04"]
+        WM[Wazuh Manager\n:55000]
+        WI[Wazuh Indexer\n:9200]
+        WD[Wazuh Dashboard\n:443]
+        SA[SOC Automation\nScript]
+        FW[Wazuh→Splunk\nForwarder]
+    end
+
+    subgraph Splunk["📊 Splunk - Windows Server"]
+        HEC[HTTP Event\nCollector :8088]
+        SP[Splunk Enterprise\n:8000]
+        DB[SOC Dashboard]
+    end
+
+    WS -->|agent logs| WM
+    DC -->|docker events| WM
+    WM -->|stores| WI
+    WI -->|visualizes| WD
+    WI -->|queries| SA
+    WM -->|alerts.json| FW
+    FW -->|HTTP POST| HEC
+    HEC -->|indexes| SP
+    SP -->|displays| DB
+```
 
 ---
 
