@@ -59,6 +59,8 @@ sudo venv/bin/python scripts/soc_automation_wazuh.py --mode full
 
 ## 🔍 Useful Splunk Searches
 
+### 🔴 High Priority — Run These Daily
+
 ---
 
 ## ⚠️ Disclaimer
