@@ -1,4 +1,4 @@
-# 🛡️ CyberIntelHQ SOC Home Lab
+# 🛡️ SOC Home Lab
 
 ![Wazuh](https://img.shields.io/badge/Wazuh-4.x-blue?style=flat-square)
 ![Splunk](https://img.shields.io/badge/Splunk-10.x-green?style=flat-square)
