@@ -61,13 +61,6 @@ sudo venv/bin/python scripts/soc_automation_wazuh.py --mode full
 
 ### 🔴 High Priority — Run These Daily
 
-All critical alerts (level 12+)
-index=main sourcetype=wazuh rule.level>=12 | table _time, agent.name, rule.description, rule.mitre.tactic | sort -_time
-Failed login attempts
-index=main sourcetype=wazuh rule.groups=authentication_failed | stats count by agent.name, data.srcip | sort -count
-Privilege escalation
-index=main sourcetype=wazuh rule.mitre.tactic="Privilege Escalation" | table _time, agent.name, rule.description | sort -_time
-
 ---
 
 ## ⚠️ Disclaimer
