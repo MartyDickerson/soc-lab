@@ -1,0 +1,26 @@
+# Environment files — NEVER commit these
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
+
+# Logs and reports
+*.log
+*_report_*.json
+*_flagged_*.json
+soc_wazuh.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
