@@ -119,6 +119,35 @@ index=main sourcetype=wazuh rule.mitre.tactic="Privilege Escalation"
 
 For educational purposes only. Only deploy on systems you own or have permission to monitor.
 
+## 📸 Screenshots
+
+### Wazuh Dashboard
+![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
+
+### Wazuh Alerts
+![Wazuh Alerts](screenshots/wazuh-alerts.png)
+
+### Wazuh MITRE ATT&CK View
+![Wazuh MITRE](screenshots/wazuh-mitre.png)
+
+### Wazuh Agents
+![Wazuh Agents](screenshots/wazuh-agents.png)
+
+### Splunk SOC Dashboard
+![Splunk Dashboard](screenshots/splunk-soc-dashboard.png)
+
+### Splunk Wazuh Alerts Ingested
+![Splunk Wazuh Alerts](screenshots/splunk-wazuh-alerts.png)
+
+### Splunk HEC Settings
+![Splunk HEC](screenshots/splunk-hec-settings.png)
+
+### SOC Script Alerts Output
+![SOC Script Alerts](screenshots/soc-script-alerts.png)
+
+### Python Forwarder Running
+![Forwarder Running](screenshots/forwarder-running.png)
+
 ---
 
 ## 📄 License
